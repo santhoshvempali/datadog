@@ -1,0 +1,113 @@
+{
+  "events": [
+    {
+      "timestamp": "2026-10-21T20:04:22.637Z",
+      "service": "demo-user-activity",
+      "env": "dev",
+      "event_type": "login_success",
+      "event_id": "18a0139f-53b6-4280-9c01-3141c48c2d59",
+      "user_id": "user-0021",
+      "user_email": "demo.user0021@example.test",
+      "plan": "pro",
+      "region": "eu-west-1",
+      "page": "/login",
+      "duration_ms": 71.6,
+      "status_code": 200,
+      "message": "login_success for user-0021"
+    },
+    {
+      "timestamp": "2026-10-21T20:04:22.637Z",
+      "service": "demo-user-activity",
+      "env": "dev",
+      "event_type": "page_view",
+      "event_id": "dcd6c3de-b4ac-44df-acda-5481f6b05e8f",
+      "user_id": "user-0004",
+      "user_email": "demo.user0004@example.test",
+      "plan": "free",
+      "region": "eu-west-1",
+      "page": "/",
+      "duration_ms": 96.75,
+      "status_code": 200,
+      "message": "page_view for user-0004"
+    },
+    {
+      "timestamp": "2026-10-21T20:04:22.637Z",
+      "service": "demo-user-activity",
+      "env": "dev",
+      "event_type": "login_success",
+      "event_id": "99ee134a-a188-4c71-ac49-522d3c4a11d0",
+      "user_id": "user-0003",
+      "user_email": "demo.user0003@example.test",
+      "plan": "free",
+      "region": "eu-west-1",
+      "page": "/login",
+      "duration_ms": 116.08,
+      "status_code": 200,
+      "message": "login_success for user-0003"
+    }
+  ],
+  "metric_points": [
+    {
+      "metric": "demo.user_activity.login.count",
+      "value": 1,
+      "type": "count",
+      "tags": [
+        "service:demo-user-activity",
+        "env:dev",
+        "region:eu-west-1",
+        "plan:pro",
+        "outcome:success"
+      ]
+    },
+    {
+      "metric": "demo.user_activity.login.duration_ms",
+      "value": 71.6,
+      "type": "gauge",
+      "tags": [
+        "service:demo-user-activity",
+        "env:dev",
+        "region:eu-west-1",
+        "plan:pro",
+        "outcome:success"
+      ]
+    },
+    {
+      "metric": "demo.user_activity.page_view.count",
+      "value": 1,
+      "type": "count",
+      "tags": [
+        "service:demo-user-activity",
+        "env:dev",
+        "region:eu-west-1",
+        "plan:free",
+        "outcome:success",
+        "page:/"
+      ]
+    },
+    {
+      "metric": "demo.user_activity.login.count",
+      "value": 1,
+      "type": "count",
+      "tags": [
+        "service:demo-user-activity",
+        "env:dev",
+        "region:eu-west-1",
+        "plan:free",
+        "outcome:success"
+      ]
+    },
+    {
+      "metric": "demo.user_activity.login.duration_ms",
+      "value": 116.08,
+      "type": "gauge",
+      "tags": [
+        "service:demo-user-activity",
+        "env:dev",
+        "region:eu-west-1",
+        "plan:free",
+        "outcome:success"
+      ]
+    }
+  ]
+}
+Dry run complete. No data was sent to Datadog.
